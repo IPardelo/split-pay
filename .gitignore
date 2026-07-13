@@ -1,0 +1,16 @@
+node_modules
+.idea
+dist
+.DS_Store
+*.local
+.vite
+
+# Android (Capacitor). A carpeta android/ xérase con `npm run android:init`.
+android/.gradle
+android/.idea
+android/build
+android/app/build
+android/local.properties
+android/capacitor-cordova-android-plugins
+*.keystore
+*.jks

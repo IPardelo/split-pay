@@ -6,6 +6,8 @@ Sen rexistro, sen servidor, e sen que os teus datos saian do teléfono se ti non
 ## Funcionalidades
 
 - Proxecto React + TypeScript que compila con Vite.
+- Catro modos de reparto: partes iguais, por partes, por importes exactos e por porcentaxe.
+- Contas en unidades mínimas, con reparto de restos.
 
 ## Arrancar
 
@@ -15,6 +17,13 @@ npm run dev
 ```
 
 ## Evolución por versión
+
+### v0.2.0 — Núcleo do diñeiro e do reparto
+
+- Tipos do dominio: grupos, participantes e movementos.
+- Aritmética en unidades mínimas: nin un céntimo perdido no reparto.
+- Catro modos de reparto: partes iguais, por partes, por importes e por porcentaxe.
+- Primeiras probas do núcleo.
 
 ### v0.1.0 — Andamio do proxecto
 

@@ -8,6 +8,8 @@ Sen rexistro, sen servidor, e sen que os teus datos saian do teléfono se ti non
 - Proxecto React + TypeScript que compila con Vite.
 - Catro modos de reparto: partes iguais, por partes, por importes exactos e por porcentaxe.
 - Contas en unidades mínimas, con reparto de restos.
+- Varios pagadores nun mesmo gasto, ingresos e reembolsos.
+- Saldo de cada participante.
 
 ## Arrancar
 
@@ -17,6 +19,12 @@ npm run dev
 ```
 
 ## Evolución por versión
+
+### v0.3.0 — Movementos e saldos
+
+- Altas, edicións e borrado lóxico de movementos.
+- Gastos con varios pagadores, ingresos e reembolsos.
+- Saldos por participante.
 
 ### v0.2.0 — Núcleo do diñeiro e do reparto
 

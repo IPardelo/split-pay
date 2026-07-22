@@ -10,6 +10,7 @@ Sen rexistro, sen servidor, e sen que os teus datos saian do teléfono se ti non
 - Contas en unidades mínimas, con reparto de restos.
 - Varios pagadores nun mesmo gasto, ingresos e reembolsos.
 - Saldo de cada participante.
+- Dous xeitos de saldar contas: bote e festa.
 
 ## Arrancar
 
@@ -19,6 +20,11 @@ npm run dev
 ```
 
 ## Evolución por versión
+
+### v0.4.0 — Saldar contas
+
+- Dous xeitos de saldar contas: **bote** (o mínimo de pagos) e **festa** (cada un lle paga a quen adiantou o que consumiu).
+- O neto de cada persoa segue sendo exactamente o seu saldo nos dous modos.
 
 ### v0.3.0 — Movementos e saldos
 

@@ -11,6 +11,7 @@ Sen rexistro, sen servidor, e sen que os teus datos saian do teléfono se ti non
 - Varios pagadores nun mesmo gasto, ingresos e reembolsos.
 - Saldo de cada participante.
 - Dous xeitos de saldar contas: bote e festa.
+- Local-first: os datos non saen do dispositivo se ti non queres.
 
 ## Arrancar
 
@@ -20,6 +21,11 @@ npm run dev
 ```
 
 ## Evolución por versión
+
+### v0.5.0 — Estado local
+
+- Todo o estado vive no almacenamento do dispositivo: a app abre sen conexión.
+- Preferencias por dispositivo: idioma, tema e modo de saldar.
 
 ### v0.4.0 — Saldar contas
 

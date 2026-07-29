@@ -12,6 +12,7 @@ Sen rexistro, sen servidor, e sen que os teus datos saian do teléfono se ti non
 - Saldo de cada participante.
 - Dous xeitos de saldar contas: bote e festa.
 - Local-first: os datos non saen do dispositivo se ti non queres.
+- Tres idiomas: galego, castelán e inglés. O galego é a referencia.
 
 ## Arrancar
 
@@ -21,6 +22,11 @@ npm run dev
 ```
 
 ## Evolución por versión
+
+### v0.6.0 — Tres idiomas
+
+- Sistema de idiomas tipado: se falta unha tradución, non compila.
+- Galego (a referencia), castelán e inglés.
 
 ### v0.5.0 — Estado local
 

@@ -13,6 +13,8 @@ Sen rexistro, sen servidor, e sen que os teus datos saian do teléfono se ti non
 - Dous xeitos de saldar contas: bote e festa.
 - Local-first: os datos non saen do dispositivo se ti non queres.
 - Tres idiomas: galego, castelán e inglés. O galego é a referencia.
+- Interface completa: grupos, movementos, saldos e axustes.
+- Segue o tema claro ou escuro do dispositivo.
 
 ## Arrancar
 
@@ -22,6 +24,13 @@ npm run dev
 ```
 
 ## Evolución por versión
+
+### v0.7.0 — Interface
+
+- Portada coa lista de grupos, pantalla de grupo con pestanas e editor de movementos.
+- Pestana de saldos con «como saldar as contas».
+- Axustes do grupo e axustes da app.
+- Tema claro ou escuro, o que teña o dispositivo.
 
 ### v0.6.0 — Tres idiomas
 

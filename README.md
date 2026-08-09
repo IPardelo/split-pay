@@ -15,6 +15,8 @@ Sen rexistro, sen servidor, e sen que os teus datos saian do teléfono se ti non
 - Tres idiomas: galego, castelán e inglés. O galego é a referencia.
 - Interface completa: grupos, movementos, saldos e axustes.
 - Segue o tema claro ou escuro do dispositivo.
+- Todas as moedas ISO 4217, con tipo de cambio conxelado no movemento.
+- Tipos de cambio en vivo do Banco Central Europeo.
 
 ## Arrancar
 
@@ -24,6 +26,12 @@ npm run dev
 ```
 
 ## Evolución por versión
+
+### v0.8.0 — Multimoeda
+
+- Todas as moedas ISO 4217, cos seus decimais reais.
+- Tipo de cambio conxelado no movemento: os saldos vellos non cambian sós.
+- Tipos en vivo desde a API pública do Banco Central Europeo.
 
 ### v0.7.0 — Interface
 

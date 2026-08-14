@@ -17,6 +17,9 @@ Sen rexistro, sen servidor, e sen que os teus datos saian do teléfono se ti non
 - Segue o tema claro ou escuro do dispositivo.
 - Todas as moedas ISO 4217, con tipo de cambio conxelado no movemento.
 - Tipos de cambio en vivo do Banco Central Europeo.
+- Gastos recorrentes diarios, semanais ou mensuais.
+- Busca, rexistro de actividade e resumo por período.
+- Export a CSV e a JSON.
 
 ## Arrancar
 
@@ -26,6 +29,14 @@ npm run dev
 ```
 
 ## Evolución por versión
+
+### v0.9.0 — Recorrentes, busca, actividade e resumo
+
+- Gastos recorrentes: diarios, semanais ou mensuais, xerados ao abrir a app.
+- Busca por concepto, nota, persoa, categoría, data ou importe.
+- Rexistro de actividade do grupo.
+- Resumo con selector de período e desglose clicable.
+- Export a CSV e a JSON.
 
 ### v0.8.0 — Multimoeda
 

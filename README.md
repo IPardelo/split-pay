@@ -20,6 +20,7 @@ Sen rexistro, sen servidor, e sen que os teus datos saian do teléfono se ti non
 - Gastos recorrentes diarios, semanais ou mensuais.
 - Busca, rexistro de actividade e resumo por período.
 - Export a CSV e a JSON.
+- Compartir grupos por código comprimido e por código QR, con escáner.
 
 ## Arrancar
 
@@ -29,6 +30,12 @@ npm run dev
 ```
 
 ## Evolución por versión
+
+### v0.10.0 — Compartir por código e por QR
+
+- Compartir un grupo nun código comprimido, sen servidor de por medio.
+- Código QR co grupo dentro e escáner para unirse.
+- `PUBLIC_URL` en `src/config/app.ts`: se algún día hai dominio, volven saír ligazóns.
 
 ### v0.9.0 — Recorrentes, busca, actividade e resumo
 

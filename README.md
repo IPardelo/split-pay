@@ -21,6 +21,7 @@ Sen rexistro, sen servidor, e sen que os teus datos saian do teléfono se ti non
 - Busca, rexistro de actividade e resumo por período.
 - Export a CSV e a JSON.
 - Compartir grupos por código comprimido e por código QR, con escáner.
+- Sincronización opcional con Firebase, con fusión movemento a movemento.
 
 ## Arrancar
 
@@ -30,6 +31,11 @@ npm run dev
 ```
 
 ## Evolución por versión
+
+### v0.11.0 — Sincronización opcional
+
+- Grupos en liña opcionais con Cloud Firestore: quen non queira, non configura nada.
+- Fusión movemento a movemento (o máis recente manda), non do grupo enteiro.
 
 ### v0.10.0 — Compartir por código e por QR
 

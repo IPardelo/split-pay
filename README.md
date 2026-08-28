@@ -22,6 +22,8 @@ Sen rexistro, sen servidor, e sen que os teus datos saian do teléfono se ti non
 - Export a CSV e a JSON.
 - Compartir grupos por código comprimido e por código QR, con escáner.
 - Sincronización opcional con Firebase, con fusión movemento a movemento.
+- Fotos do ticket, en Firebase Storage ou no propio dispositivo.
+- Escaneo de tickets e categoría automática con IA (opcional).
 
 ## Arrancar
 
@@ -31,6 +33,12 @@ npm run dev
 ```
 
 ## Evolución por versión
+
+### v0.12.0 — Fotos dos tickets e IA
+
+- Fotos do ticket no gasto: van a Firebase Storage se o hai, e se non ao IndexedDB do dispositivo.
+- Escaneo do ticket e categoría suxerida cun modelo compatible con OpenAI, tamén opcional.
+- Máis probas dos extras.
 
 ### v0.11.0 — Sincronización opcional
 

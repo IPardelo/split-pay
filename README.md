@@ -24,6 +24,7 @@ Sen rexistro, sen servidor, e sen que os teus datos saian do teléfono se ti non
 - Sincronización opcional con Firebase, con fusión movemento a movemento.
 - Fotos do ticket, en Firebase Storage ou no propio dispositivo.
 - Escaneo de tickets e categoría automática con IA (opcional).
+- Empaquetado para Android con Capacitor, con icono propio.
 
 ## Arrancar
 
@@ -32,7 +33,20 @@ npm install
 npm run dev
 ```
 
+## Android
+
+```bash
+npm run android:init   # só a primeira vez
+npm run android        # compila, sincroniza e abre Android Studio
+npm run android:sync   # despois de cada cambio
+```
+
 ## Evolución por versión
+
+### v0.13.0 — Android con Capacitor
+
+- A app empaquétase para Android con Capacitor: `npm run android`.
+- Icono propio en todas as densidades, tamén o adaptativo.
 
 ### v0.12.0 — Fotos dos tickets e IA
 

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Primeiro plano do icono adaptativo, xerado a partir de public/icon.svg.
+     A arte de 512 px queda escalada a 84 dp dentro do lenzo de 108 dp, así que
+     entra enteira na zona segura (72 dp) de calquera máscara do lanzador. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M30.703,40.875 A10.172,10.172 0 1 0 51.047,40.875 A10.172,10.172 0 1 0 30.703,40.875"
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4.922"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M56.953,67.125 A10.172,10.172 0 1 0 77.297,67.125 A10.172,10.172 0 1 0 56.953,67.125"
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4.922"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M66.14,37.92 L41.86,70.08"
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4.922"
+        android:strokeLineCap="round" />
+</vector>

@@ -25,6 +25,7 @@ Sen rexistro, sen servidor, e sen que os teus datos saian do teléfono se ti non
 - Fotos do ticket, en Firebase Storage ou no propio dispositivo.
 - Escaneo de tickets e categoría automática con IA (opcional).
 - Empaquetado para Android con Capacitor, con icono propio.
+- O botón atrás de Android pecha o que teñas aberto en vez de saír da app.
 
 ## Arrancar
 
@@ -42,6 +43,11 @@ npm run android:sync   # despois de cada cambio
 ```
 
 ## Evolución por versión
+
+### v0.14.0 — Botón atrás nativo
+
+- O botón atrás de Android pecha a folla aberta, despois volve á portada e só aí sae da app.
+- Nova dependencia `@capacitor/app`; require `npm install` e `npx cap sync android`.
 
 ### v0.13.0 — Android con Capacitor
 

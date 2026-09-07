@@ -1,48 +1,152 @@
+<div align="center">
+
+<img src="public/icon.svg" alt="Split Pay" width="96" height="96">
+
 # Split Pay
 
 **Reparte gastos compartidos en grupo — viaxes, pisos, ceas.**
 Sen rexistro, sen servidor, e sen que os teus datos saian do teléfono se ti non queres.
 
+<br>
+
+[![Android](https://img.shields.io/badge/Android-APK-3DDC84?style=flat-square&logo=android&logoColor=white)](ANDROID.md)
+[![Capacitor](https://img.shields.io/badge/Capacitor-7-119EFF?style=flat-square&logo=capacitor&logoColor=white)](https://capacitorjs.com)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vite.dev)
+[![Vitest](https://img.shields.io/badge/probas-vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white)](https://vitest.dev)
+[![Firebase](https://img.shields.io/badge/Firebase-opcional-FFCA28?style=flat-square&logo=firebase&logoColor=black)](#configuración)
+[![OpenAI](https://img.shields.io/badge/IA-opcional-412991?style=flat-square&logo=openai&logoColor=white)](#configuración)
+
+</div>
+
+---
+
+## Porque
+
+Repartir a conta dunha viaxe ou os gastos dun piso non debería esixir que catro persoas se dean de alta nun servizo, acepten unhas condicións e deixen os seus datos nun servidor alleo. As apps que fan isto ben —Tricount, Splitwise— piden conta; as que non a piden adoitan quedarse curtas en canto o reparto se complica un pouco.
+
+**Split Pay** vai polo camiño contrario: os datos viven no teléfono, a app abre sen
+conexión porque non precisa ningunha, e non hai que rexistrarse en nada. Se despois queres
+compartir un grupo con outra persoa, hai dous xeitos: pasarlle un código (unha foto do
+grupo, sen servidor de por medio) ou configurar o teu propio Firebase e que se sincronice
+soa. As dúas cousas son túas; ningunha é obrigatoria.
+
+Ademais resolve tres cousas que adoitan faltar: **varios pagadores nun mesmo gasto**,
+**tipos de cambio conxelados** no movemento —para que os saldos vellos non cambien sós
+cando se move o euro— e **galego** de serie, non como tradución a medio facer.
+
 ## Funcionalidades
 
-- Proxecto React + TypeScript que compila con Vite.
-- Catro modos de reparto: partes iguais, por partes, por importes exactos e por porcentaxe.
-- Contas en unidades mínimas, con reparto de restos.
-- Varios pagadores nun mesmo gasto, ingresos e reembolsos.
-- Saldo de cada participante.
-- Dous xeitos de saldar contas: bote e festa.
-- Local-first: os datos non saen do dispositivo se ti non queres.
-- Tres idiomas: galego, castelán e inglés. O galego é a referencia.
-- Interface completa: grupos, movementos, saldos e axustes.
-- Segue o tema claro ou escuro do dispositivo.
-- Todas as moedas ISO 4217, con tipo de cambio conxelado no movemento.
-- Tipos de cambio en vivo do Banco Central Europeo.
-- Gastos recorrentes diarios, semanais ou mensuais.
-- Busca, rexistro de actividade e resumo por período.
-- Export a CSV e a JSON.
-- Compartir grupos por código comprimido e por código QR, con escáner.
-- Sincronización opcional con Firebase, con fusión movemento a movemento.
-- Fotos do ticket, en Firebase Storage ou no propio dispositivo.
-- Escaneo de tickets e categoría automática con IA (opcional).
-- Empaquetado para Android con Capacitor, con icono propio.
-- O botón atrás de Android pecha o que teñas aberto en vez de saír da app.
+### 💸 Gastos
 
-## Arrancar
+- Grupos con moeda base e N participantes, **sen rexistro**.
+- **Catro modos de reparto**: partes iguais, por partes, por importes exactos e por
+  porcentaxe. Botóns de *todos / ningún*. O pagador pode non participar no reparto.
+- **Varios pagadores** nun mesmo gasto.
+- **Gastos recorrentes**: diarios, semanais ou mensuais. As repeticións vencidas xéranse
+  soas ao abrir a app.
+- **Fotos do ticket** adxuntas ao gasto.
+- **Ingresos** (unha devolución, a fianza) e **reembolsos** entre dúas persoas.
+- **Calculadora** no campo de importe: podes escribir `12,50 + 3*2`.
+- 19 categorías agrupadas por temas.
+- **Busca** por concepto, nota, persoa, categoría, data ou importe. A lista pagínase.
 
-```bash
-npm install
-npm run dev
+### 💱 Diñeiro
+
+- Todas as moedas **ISO 4217**, cos seus decimais reais (o iene non ten céntimos; o dinar
+  kuwaití ten tres).
+- **Tipos de cambio en vivo** desde a API pública do Banco Central Europeo, ou a man.
+  O tipo queda **conxelado** no movemento, así que os saldos non cambian sós.
+- Saldos por persoa e **dous xeitos de saldar contas**: **bote** (o mínimo de pagos) e
+  **festa** (cada un lle paga a quen adiantou o que consumiu, gasto a gasto). Botón para
+  **compartir os pagos** como texto.
+- **Saldo global** sumando todos os grupos.
+
+### 📊 Resumo
+
+- Selector de período: todo, este mes, mes pasado, 3 meses, 12 meses, este ano.
+- Evolución mensual, por categoría (**clicable**, ábreche os gastos), por persoa,
+  o que puxeches ti fronte á túa parte, e canto do total é gasto recorrente.
+- Export a **CSV** e a **JSON**, no idioma activo. Copia de seguranza completa.
+
+### 👥 Grupo
+
+- **Rexistro de actividade**: quen engadiu, editou ou borrou que, e cando.
+- Notas do grupo, favoritos, arquivar.
+- Compartir por **código** e por **código QR**, con escáner para unirse.
+- Segue o tema (claro ou escuro) que teña o teléfono.
+
+## Configuración
+
+### Requisitos
+
+| Ferramenta | Versión |
+|---|---|
+| Node.js | 18 ou superior |
+| npm | incluído con Node |
+| Android Studio | Ladybug ou superior, co SDK de Android |
+| JDK | 17 (o que trae Android Studio) |
+
+### 🔥 Firebase — grupos en liña e fotos compartidas
+
+Pega en `src/config/firebase.ts` a configuración web do teu proxecto. Con ela:
+
+- ao crear un grupo podes escoller **local** ou **en liña**;
+- as fotos van a **Firebase Storage** (se enches `storageBucket`) e véas todo o grupo.
+
+Sen configuración, todos os grupos son locais e as fotos quedan no **IndexedDB** deste
+teléfono (a app dío en cada gasto).
+
+Precisa Cloud Firestore activado; o propio ficheiro trae as regras mínimas comentadas.
+Ollo: **son abertas**, e quen adiviñe un token le e escribe. Os tokens son aleatorios de 22
+caracteres, pero para uso serio engade autenticación.
+
+### 🤖 OpenAI — escanear tickets e suxerir categoría
+
+Con `apiKey` chea en `src/config/openai.ts` aparecen:
+
+- **Escanear ticket**: fas unha foto e enche importe, moeda, data, concepto e categoría.
+- **Suxerir categoría** a partir do título.
+
+Vale calquera endpoint compatible con OpenAI (Ollama, LM Studio, un proxy teu).
+
+> [!WARNING]
+> **A chave viaxa ao dispositivo.** Esta app non ten servidor, así que a chamada faise
+> desde o cliente. Úsaa só para ti, ou apunta `baseUrl` a un proxy que garde a chave de
+> verdade.
+
+### 🌐 `src/config/app.ts` — se tes dominio
+
+`PUBLIC_URL` está baleiro a propósito: iso é o que fai que se comparta por código. Se
+colgas a web nun enderezo real, ponno aí e volven saír ligazóns automaticamente.
+
+## Estrutura xeral
+
 ```
-
-## Android
-
-```bash
-npm run android:init   # só a primeira vez
-npm run android        # compila, sincroniza e abre Android Studio
-npm run android:sync   # despois de cada cambio
+split-pay/
+├── src/
+│   ├── components/      pantallas e compoñentes da interface
+│   ├── lib/             motor de reparto, recorrencias, datas, códec, CSV
+│   ├── i18n/            dicionarios gl · es · en (gl.ts é a referencia)
+│   ├── config/          firebase.ts · openai.ts · app.ts
+│   └── App.tsx          rutas e arranque
+├── android/             proxecto nativo xerado por Capacitor
+├── public/icon.svg      fonte do icono
+├── docs/
+│   ├── tecnico.md       mapa do código, sincronización e decisións
+│   └── ANDROID.md       SDK, comandos, icono, APK e erros típicos
+├── capacitor.config.ts  appId, appName, webDir
+└── package.json
 ```
 
 ## Evolución por versión
+
+### v1.0.0 — Primeira versión estable
+
+- Documentación técnica e de Android en `docs/`.
+- README completo: porqué, funcionalidades, configuración e estrutura.
+- Primeira versión estable.
 
 ### v0.14.0 — Botón atrás nativo
 
@@ -128,3 +232,7 @@ npm run android:sync   # despois de cada cambio
 ## Autor
 
 [Ismael Castiñeira](https://ipardelo.es)
+
+```bash
+VIVA GHALISIA E A COSTA DA MORTE! 💀
+```
